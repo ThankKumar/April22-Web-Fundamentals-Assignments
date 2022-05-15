@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>test</title>
+  <style>
+    .plate {
+      height: 80px;
+      background-color: lightgrey;
+    }
+
+    .bento {
+      height: 50px;
+      background-color: lightgreen;
+    }
+
+    .orange {
+      height: 20px;
+      width: 50%;
+      background-color: orange;
+      margin: 0 auto;
+    }
+
+    .bento:nth-last-child(3) {
+      background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="plate">Plate</div>
+  <div class="bento">Bento selected with .bento:nth-last-child(3)</div>
+  <div class="plate">Plate
+    <div class="orange">Orange</div>
+    <div class="orange">Orange</div>
+    <div class="orange">Orange</div>
+  </div>
+  <div class="bento">Bento</div>
+</body>
+</html>
